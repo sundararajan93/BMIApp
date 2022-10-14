@@ -22,6 +22,8 @@ The BMI Value has been calculated based on  below image.
 ![BMI VALUE](https://i.imgur.com/P3JXcsD.png)
 
 
+NOTE:
+The App needs Buildozer to convert to Android smart phones.
 
 
 
