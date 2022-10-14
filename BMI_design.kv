@@ -1,0 +1,47 @@
+<MyGridLayout>
+    
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            height: 200
+
+            Label:
+                text: "Weight (kg)"
+                size_hint_y: None
+                height: 50
+                
+            TextInput:
+                multiline: False
+                id: bmi_weight
+                size_hint_y: None
+                height: 50
+
+            Label:
+                text: "Height (cm)"
+                size_hint_y: None
+                height: 50
+                
+            TextInput:
+                multiline: False
+                id: h
+                size_hint_y: None
+                height: 50
+
+        Label:
+            id: bmi
+            text: "Calculate your BMI"
+            font_size: 32
+            
+        Button:
+            text: "Calculate"
+            font_size: 40
+            size_hint_y: None
+            height: 50
+            background_normal: ""
+            background_color: (91/255.0,62/255.0,150/255.0,1)
+            on_press: 
+                root.calculate()
